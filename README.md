@@ -1,5 +1,5 @@
 # pollen
-Script to retrieve the pollen map of France for the day from https://pollens.fr/
+script to retrieve the pollen risk map in France for the day from https://pollens.fr/
 
 ## Why
 I wanted to know every day the risks of allergy according to the department thanks to this map on the site https://pollens.fr/, to see which department is the least affected by pollen.
