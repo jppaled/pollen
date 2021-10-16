@@ -1,5 +1,5 @@
 # pollen
-script to retrieve the pollen risk map in France for the day from https://pollens.fr/
+Script to retrieve the pollen risk map in France for the day from https://pollens.fr/
 
 ## Why
 I wanted to know every day the risks of allergy according to the department thanks to this map on the site https://pollens.fr/, to see which department is the least affected by pollen.
@@ -11,7 +11,7 @@ So I started going to the site every day and then took a screenshot with the dat
 Then finally it was automatable, so I made this script.  
 
 ## The script
-this script retrieves the image of the pollen risk map of france, with its date.
+This script retrieves the image of the pollen risk map of france, with its date.
 
 The date is in French, so you had to translate the month into English, to then create a date in `Y-m-d` format.
 
