@@ -27,3 +27,6 @@ If the map (and therefore the date) updates on the site, a new image will be sav
 you can pass a custom path as argument 
 
 `bash pollen.sh /home/$USER/my-directory`
+
+
+![pollen-2021-09-01-19-56-46 cleaned](https://user-images.githubusercontent.com/22444128/137595081-db1689c3-ddd5-4e30-a457-1bd729fba7ca.png)
