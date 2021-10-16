@@ -1,6 +1,11 @@
 #! /bin/bash
 
-path_to_save_img=$1
+path_to_save_img=$HOME
+
+if [[ -f "$1" || -d "$1" ]] 
+then
+    path_to_save_img=$1
+fi
 
 get_translated_month () {
     local frMonths=( janvier fevrier mars avril mai juin juillet aout septembre octobre novembre decembre )
