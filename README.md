@@ -20,14 +20,26 @@ The image is then saved with the name `pollen-Y-m-d.png`.
 If the map (and therefore the date) updates on the site, a new image will be saved.
 
 ## Instructions
-`curl -O https://raw.githubusercontent.com/jppaled/pollen/main/pollen.sh`
+```
+curl -O https://raw.githubusercontent.com/jppaled/pollen/main/pollen
+chmod +x pollen
+./pollen 
+```
 
-`bash pollen.sh`
+Default path where images are saves is your $HOME directory
 
 you can pass a custom path as argument 
 
-`bash pollen.sh /home/$USER/my-directory`
+```
+./pollen /home/$USER/my-directory
+```
 
+
+## Cron
+I personnaly use this with a cron
+```
+0 */4 * * * $HOME/pollen $HOME/Documents/pollens > /dev/null 2>&1
+```
 
 ## Image exemple from https://pollens.fr the 2021-09-01
 ![pollen-2021-09-01-19-56-46 cleaned](https://user-images.githubusercontent.com/22444128/137595081-db1689c3-ddd5-4e30-a457-1bd729fba7ca.png)
