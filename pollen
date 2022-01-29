@@ -23,9 +23,9 @@ html=$(curl -s https://pollens.fr/ | grep "Carte de vigilance");
 
 # remove html tag
 title=$(echo $html | sed 's/<[^>]*>//g ; /^$/d');
-
+echo $title;
 # remove useless text to get the french date
-date=$(echo $title | sed s/"Carte de vigilance - mise &agrave; jour le "// | sed 's/\r$//');
+date=$(echo $title | sed s/"Carte de vigilance Carte de vigilance - mise &agrave; jour le "// | sed 's/\r$//');
 
 # convert to array
 dateArr=( $date );
