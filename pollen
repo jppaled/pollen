@@ -8,12 +8,11 @@ then
 fi
 
 get_translated_month () {
-    local frMonths=( janvier 'f&eacute;vrier' mars avril mai juin juillet aout septembre octobre novembre decembre )
+    local frMonths=( janvier 'f&eacute;vrier' mars avril Mai juin juillet aout septembre octobre novembre decembre )
     local enMonths=( January February March April May June July August September October November December )
     local i
     
     for (( i=0; i<11; i++ )); do
-
         [[ $1 = ${frMonths[$i]} ]] && break
     done
     printf ${enMonths[$i]}
