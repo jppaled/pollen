@@ -8,7 +8,7 @@ then
 fi
 
 get_translated_month () {
-    local frMonths=( janvier 'f&eacute;vrier' mars avril Mai juin juillet aout septembre octobre novembre decembre )
+    local frMonths=( Janvier 'F&eacute;vrier' Mars Avril Mai Juin Juillet Aout Septembre Octobre Novembre Decembre )
     local enMonths=( January February March April May June July August September October November December )
     local i
     
